@@ -7,3 +7,12 @@
   list-style: none;
   text-decoration: none;
 }
+
+/* ----------NAVBAR START------------- */
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------NAVBAR END------------- */
