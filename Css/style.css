@@ -43,7 +43,45 @@
   color: var(--color-black);
 }
 
-.contact {
-  width: 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 285px;
 }
+
+.buttons a{
+  font-size: 12px;
+}
+
+button {
+  width: 125px;
+  height: 35px;
+}
+
+.buttons .contact {
+  background-color: var(--color-black);
+  border: 2px solid var(--color-black);
+}
+
+.buttons .extern-link {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+
+.buttons .contact a {
+  color: var(--color-white);
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.buttons .extern-link a {
+  color: var(--color-black);
+  letter-spacing: -0.5px;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+
 /* ----------NAVBAR END------------- */
