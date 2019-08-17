@@ -84,5 +84,34 @@ button {
   text-transform: uppercase;
 }
 
-
 /* ----------NAVBAR END------------- */
+
+/* --------FOOTER START------------- */
+
+footer {
+  display: flex;
+  font-size: 14px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer a,
+footer h4 {
+  font-size: 12px;
+}
+
+footer .links ul {
+  display: flex;
+}
+
+footer a {
+  color: var(--color-black);
+  margin: 4px;
+}
+
+footer h4 {
+  color: var(--color-black);
+}
+
+/* ---------FOOTER END-------------- */
