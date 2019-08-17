@@ -8,6 +8,14 @@
   text-decoration: none;
 }
 
+:root {
+  --color-black: #12130f;
+  --color-gray: #3f4045;
+  --color-blue: #5d737e;
+  --color-green: #7cb4b8;
+  --color-white: #fcfcfc;
+  --color-white-dark: #f7f9fb;
+}
 /* ----------NAVBAR START------------- */
 
 .navContainer {
@@ -29,6 +37,10 @@
   width: 300px;
   justify-content: space-around;
   align-items: center;
+}
+
+.menuContainer a {
+  color: var(--color-black);
 }
 
 /* ----------NAVBAR END------------- */
