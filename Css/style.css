@@ -12,7 +12,23 @@
 
 .navContainer {
   display: flex;
+  height: 90px;
+  padding: 0 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuContainer {
+  width: 50%;
+  display: inherit;
   justify-content: center;
+}
+
+.menu {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* ----------NAVBAR END------------- */
