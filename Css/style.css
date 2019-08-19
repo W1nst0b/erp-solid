@@ -107,7 +107,6 @@ button {
   justify-content: space-between;
   border: 1px solid red;
   width: 1030px;
-  display: flex;
 }
 
 .benefitItem {
@@ -119,10 +118,14 @@ button {
 }
 
 .benefitItem img {
-  margin-top: 50px;
+  margin: 50px 0;
   width: 200px;
   height: 200px;
   border: 1px solid red;
+}
+
+.benefitsDetails {
+
 }
 
 /* -----------BENEFIT END----------- */
