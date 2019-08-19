@@ -102,6 +102,7 @@ button {
 .benefits h2 {
   margin: 28px;
   font-size: 60px;
+  color: var(--color-green);
 }
 
 .benefitsContainer {
