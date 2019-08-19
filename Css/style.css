@@ -96,6 +96,7 @@ button {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  background-color: var(--color-skyblue);
 }
 
 .benefits h2 {
