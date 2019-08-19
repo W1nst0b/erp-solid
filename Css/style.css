@@ -97,6 +97,15 @@ button {
   align-items: center;
 }
 
+.brand {
+  display: flex;
+}
+
+.logoUsuario {
+  width: 120px;
+  height: 70px;
+  border: 1px solid red;
+}
 /* ----------USERS END-------------- */
 
 /* --------FOOTER START------------- */
