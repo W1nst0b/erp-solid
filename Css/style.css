@@ -95,7 +95,7 @@ button {
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
-  height: 665px;
+  height: 100vh;
 }
 
 .benefits h2 {
@@ -112,7 +112,7 @@ button {
 .benefitItem {
   display: inherit;
   width: 205px;
-  height: 330px;
+  height: 400px;
   flex-direction: column;
   align-items: center;
 }
