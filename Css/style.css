@@ -99,10 +99,13 @@ button {
 
 .brand {
   display: flex;
+  margin-top: 68px;
+  width: 870px;
+  justify-content: space-between;
 }
 
 .logoUsuario {
-  width: 120px;
+  width: 195px;
   height: 70px;
   border: 1px solid red;
 }
