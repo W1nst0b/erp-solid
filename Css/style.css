@@ -90,7 +90,24 @@ button {
 
 /* -----------FUNCTION START-------- */
 
+.functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-softblue);
+}
 
+.functionDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.function {
+  /* Use another display method if necessary */
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* -----------FUNCTION END---------- */
 
