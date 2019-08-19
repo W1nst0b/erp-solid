@@ -130,6 +130,10 @@ button {
   height: 100px;
 }
 
+.benefitsDetails h4 {
+  margin-bottom: 20px;
+}
+
 /* -----------BENEFIT END----------- */
 
 /* ---------USERS START------------- */
