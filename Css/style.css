@@ -99,7 +99,7 @@ button {
 }
 
 .benefits h2 {
-  margin: 78px;
+  margin: 28px;
 }
 
 .benefitsContainer {
@@ -115,8 +115,14 @@ button {
   width: 205px;
   height: 330px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.benefitItem img {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
 }
 
 /* -----------BENEFIT END----------- */
