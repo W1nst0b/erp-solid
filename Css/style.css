@@ -136,7 +136,8 @@ button {
 .form {
   position: relative;
   display: inherit;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   padding: 27px 16px;
   border: 1px solid black;
   width: 380px;
@@ -151,8 +152,14 @@ button {
   border-radius: 5px;
   border: 1px solid blue;
   background-color: var(--color-white);
-  width: 351px;
+  width: 346px;
   height: 427px;
+}
+
+.formContainer {
+  display: inherit;
+  flex-direction: column;
+
 }
  
 /* -----------HERO END-------------- */
