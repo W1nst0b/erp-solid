@@ -122,6 +122,11 @@ button {
 
 .functionItem {
   display: inherit;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: center;
+  width: 400px;
+  height: 416px;
   flex-direction: column;
 }
 
