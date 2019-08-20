@@ -98,6 +98,10 @@ button {
 }
 
 .heroImageContainer {
+  position: absolute;
+}
+
+.heroContainer {
   position: relative;
 }
 
