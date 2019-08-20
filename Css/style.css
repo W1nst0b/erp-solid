@@ -131,6 +131,17 @@ button {
   flex-direction: column;
 }
 
+.itemImageContainer {
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+}
+
+.imgLogistica {
+  padding-top: 20px;
+}
+
 /* -----------FUNCTION END---------- */
 
 /* ----------BENEFIT START---------- */
