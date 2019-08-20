@@ -99,6 +99,7 @@ button {
 
 .heroImageContainer {
   position: absolute;
+  width: inherit;
 }
 
 .heroContainer {
