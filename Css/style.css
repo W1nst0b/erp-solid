@@ -19,7 +19,7 @@
   --color-white: #fcfcfc;
   --color-white-dark: #f7f9fb;
 }
-/* ----------NAVBAR START------------- */
+/* ----------HEADER START------------- */
 
 .navContainer {
   display: flex;
@@ -88,7 +88,13 @@ button {
   text-transform: uppercase;
 }
 
-/* ----------NAVBAR END------------- */
+/* ----------HEADER END------------- */
+
+/* ----------HERO START------------- */
+
+
+
+/* -----------HERO END-------------- */
 
 /* -----------FUNCTION START-------- */
 
