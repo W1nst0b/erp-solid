@@ -95,16 +95,17 @@ button {
 .hero {
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .heroCover {
-  height: calc(100% - 90px);
+  position: relative;
   width: 100%;
-  border: 1px solid red;
+  height: 550px;
+  border: 1px solid blue;
 }
 
 .heroImageContainer {
-  position: relative;
   height: 540px;
 }
 
@@ -116,14 +117,26 @@ button {
 
 .heroContainer {
   position: absolute;
+  left: 70px;
+  right: 70px;
+  top: 135px;
+  bottom: 40px;
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .heroDetails {
+  border: 1px solid green;
+  width: 620px;
+  height: 320px;
 }
 
 .form {
+  border: 1px solid black;
+  width: 380px;
+  height: 480px;
   display: inherit;
   flex-direction: column;
 }
