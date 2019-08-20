@@ -92,7 +92,20 @@ button {
 
 /* ----------HERO START------------- */
 
+.hero {
+  display: flex;
+  justify-content: center;
+}
 
+.heroImageContainer {
+  position: relative;
+}
+
+.form {
+  display: inherit;
+  flex-direction: column;
+
+}
 
 /* -----------HERO END-------------- */
 
