@@ -109,6 +109,10 @@ button {
   margin: 28px;
 }
 
+.functionDescription p {
+  font-size: 24px;
+}
+
 .function {
   /* Use another display method if necessary */
   display: flex;
