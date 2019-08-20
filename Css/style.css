@@ -117,6 +117,7 @@ button {
 .function {
   /* Use another display method if necessary */
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
