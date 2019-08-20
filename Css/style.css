@@ -104,6 +104,11 @@ button {
   align-items: center;
 }
 
+.functionDescription h2 {
+  font-size: 60px;
+  margin: 28px;
+}
+
 .function {
   /* Use another display method if necessary */
   display: flex;
