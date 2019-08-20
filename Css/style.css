@@ -120,6 +120,11 @@ button {
   flex-wrap: wrap;
 }
 
+.functionItem {
+  display: inherit;
+  flex-direction: column;
+}
+
 /* -----------FUNCTION END---------- */
 
 /* ----------BENEFIT START---------- */
