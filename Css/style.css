@@ -134,15 +134,27 @@ button {
 }
 
 .form {
+  position: relative;
   display: inherit;
   justify-content: space-between;
-  
+  padding: 27px 16px;
   border: 1px solid black;
   width: 380px;
   height: 480px;
   flex-direction: column;
 }
-
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 27px;
+  left: 16px; 
+  border-radius: 5px;
+  border: 1px solid blue;
+  background-color: var(--color-white);
+  width: 351px;
+  height: 427px;
+}
+ 
 /* -----------HERO END-------------- */
 
 /* -----------FUNCTION START-------- */
