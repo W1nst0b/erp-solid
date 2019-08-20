@@ -97,19 +97,35 @@ button {
   justify-content: center;
 }
 
-.heroImageContainer {
-  position: absolute;
-  width: inherit;
+.heroCover {
+  height: calc(100% - 90px);
+  width: 100%;
+  border: 1px solid red;
 }
 
-.heroContainer {
+.heroImageContainer {
   position: relative;
+  height: 540px;
+}
+
+/* .heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.heroContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroDetails {
 }
 
 .form {
   display: inherit;
   flex-direction: column;
-
 }
 
 /* -----------HERO END-------------- */
