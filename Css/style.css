@@ -134,10 +134,12 @@ button {
 }
 
 .form {
+  display: inherit;
+  justify-content: space-between;
+  
   border: 1px solid black;
   width: 380px;
   height: 480px;
-  display: inherit;
   flex-direction: column;
 }
 
