@@ -114,7 +114,7 @@ button {
   padding: 0 150px;
 }
 
-.function {
+.functionsContainer {
   /* Use another display method if necessary */
   display: flex;
   justify-content: center;
@@ -139,8 +139,14 @@ button {
 }
 
 .imgLogistica {
-  padding-top: 20px;
+  padding-top: 16px;
 }
+
+.imgLibro {
+  padding-top: 12px;
+}
+
+.imgConta
 
 /* -----------FUNCTION END---------- */
 
