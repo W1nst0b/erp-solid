@@ -136,6 +136,7 @@ button {
 }
 
 .heroDetails {
+  position: relative;
   border: 1px solid green;
   width: 620px;
   height: 320px;
@@ -149,6 +150,11 @@ button {
   color: var(--color-white);
   text-align: left;
   font-size: 80px;
+}
+
+.heroDetails p {
+  color: var(--color-white-dark);
+  font-size: 30px;
 }
 
 .form {
