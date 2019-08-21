@@ -125,9 +125,9 @@ button {
 
 .heroContainer {
   position: absolute;
-  left: 70px;
-  right: 70px;
-  top: 135px;
+  left: 100px;
+  right: 100px;
+  top: 95px;
   bottom: 40px;
   border: 1px solid red;
   display: flex;
@@ -156,12 +156,12 @@ button {
 .background {
   position: absolute;
   z-index: 0;
-  top: 27px;
+  top: 22px;
   left: 16px; 
   border-radius: 5px;
   border: 1px solid blue;
   background-color: var(--color-white);
-  opacity: 0.2;
+  opacity: 0.3;
   width: 346px;
   height: 427px;
 }
@@ -181,6 +181,7 @@ button {
   width: 271px;
   text-align: left;
   background-color: transparent;
+  color: red;
   font-size: 18px;
   padding-top: 5px;
   height: 25px;
@@ -188,7 +189,11 @@ button {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 1px solid var(--color-black);
+}
+
+::placeholder {
+  color: var(--color-black)
 }
 
 .checkbox {
