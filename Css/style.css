@@ -170,12 +170,19 @@ button {
   width: 271px;
   text-align: left;
   font-size: 18px;
+  padding-top: 5px;
   height: 25px;
   outline: none;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid var(--color-blue);
+}
+
+.checkbox {
+  display: inherit;
+  align-items: center;
+  font-size: 12px;
 }
 
 .formButton {
