@@ -19,6 +19,9 @@
   --color-white: #fcfcfc;
   --color-white-dark: #f7f9fb;
 }
+
+
+
 /* ----------HEADER START------------- */
 
 .navContainer {
@@ -145,12 +148,15 @@ button {
 .heroDetails h1 {
   color: var(--color-white);
   text-align: left;
-  font-size: 80px;
+  letter-spacing: 3px;
+  font-size: 60px;
+  text-shadow: 3px 3px 20px var(--color-black);
 }
 
 .heroDetails p {
   color: var(--color-white-dark);
   font-size: 30px;
+  text-shadow: 3px 3px 10px var(--color-black);
 }
 
 .heroButtonContainer {
@@ -189,6 +195,7 @@ button {
   opacity: 0.3;
   width: 346px;
   height: 437px;
+  box-shadow: 5px 5px 20px var(--color-black);
 }
 
 .formContainer {
@@ -213,11 +220,11 @@ button {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-gray);
 }
 
 ::placeholder {
-  color: var(--color-black)
+  color: var(--color-gray)
 }
 
 .checkbox {
