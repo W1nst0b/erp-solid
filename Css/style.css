@@ -139,6 +139,10 @@ button {
   border: 1px solid green;
   width: 620px;
   height: 320px;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .form {
