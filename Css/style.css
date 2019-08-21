@@ -125,21 +125,18 @@ button {
 
 .heroContainer {
   position: absolute;
-  left: 100px;
-  right: 100px;
+  left: 140px;
+  right: 140px;
   top: 95px;
   bottom: 40px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .heroDetails {
-  position: relative;
-  border: 1px solid green;
   width: 620px;
-  height: 320px;
+  height: 420px;
   display: inherit;
   flex-direction: column;
   align-items: flex-start;
@@ -155,6 +152,21 @@ button {
 .heroDetails p {
   color: var(--color-white-dark);
   font-size: 30px;
+}
+
+.heroButtonContainer {
+  position: relative;
+  width: 100%;
+  height: 37px;
+  align-self: center;
+}
+
+.heroButton {
+  position: absolute;
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+  left: 30px;
 }
 
 .form {
@@ -175,7 +187,6 @@ button {
   top: 22px;
   left: 16px; 
   border-radius: 5px;
-  border: 1px solid blue;
   background-color: var(--color-white);
   opacity: 0.3;
   width: 346px;
@@ -197,7 +208,6 @@ button {
   width: 271px;
   text-align: left;
   background-color: transparent;
-  color: red;
   font-size: 18px;
   padding-top: 5px;
   height: 25px;
