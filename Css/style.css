@@ -426,7 +426,15 @@ button {
   border: 1px solid red;
 }
 
+.chartButton button {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
 .planEmprendedor {
+  color: var(--color-white);
+  background-color: var(--color-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,6 +443,8 @@ button {
   grid-area: planEmprendedor;
 }
 .planMype {
+  color: var(--color-white);
+  background-color: var(--color-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,6 +453,8 @@ button {
   grid-area: planMype;
 }
 .planPyme {
+  color: var(--color-white);
+  background-color: var(--color-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,6 +472,31 @@ button {
 .system {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.sectionDetails {
+  display: flex;
+  background-color: var(--color-white-dark);
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 7px;
+}
+
+.dropDownContainer {
+  padding: 20px;
+}
+
+.normalLetter {
+  font-size: 18px;
+}
+
+.middleLetter {
+  font-size: 14px;
+}
+
+.smallLetter {
+  font-size: 12px;
 }
 
 /*
@@ -501,6 +538,8 @@ button {
   justify-content: center;
   border: 1px solid green;
   align-items: center;
+  font-size: 12px;
+  font-weight: 550px;
 }
 
 /* -----------PLANS END----------- */
