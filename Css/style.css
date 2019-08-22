@@ -20,8 +20,6 @@
   --color-white-dark: #f7f9fb;
 }
 
-
-
 /* ----------HEADER START------------- */
 
 .navContainer {
@@ -57,11 +55,12 @@
   width: 285px;
 }
 
-.buttons a{
+.buttons a {
   font-size: 12px;
 }
 
 /* Global style for buttons */
+
 button {
   width: 125px;
   height: 35px;
@@ -190,7 +189,7 @@ button {
   position: absolute;
   z-index: 0;
   top: 22px;
-  left: 16px; 
+  left: 16px;
   border-radius: 5px;
   background-color: var(--color-white);
   opacity: 0.3;
@@ -252,6 +251,7 @@ button {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 /* -----------HERO END-------------- */
 
 /* -----------FUNCTION START-------- */
@@ -358,7 +358,54 @@ button {
 
 /* -----------PLANS START----------- */
 
+.plans {
+  display: flex;
+  justify-content: center;
+}
 
+.plansContainer {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plansDetails h1 {
+  font-size: 60px;
+}
+
+.plansDetails p {
+  font-size: 28px;
+}
+
+.plansChart {
+  display: grid;
+  border: 1px solid red;
+  grid-template: repeat(7, 55px)/ repeat(4, 220px);
+  grid-gap: 1px;
+}
+
+.chartSection {
+  border: 1px solid red;
+}
+
+.chartSection:nth-child(4n+5) {
+  border: 5px solid black;
+  width: 330px;
+}
+
+.chartSection:nth-child(25),
+.chartSection:nth-child(1) {
+  border: none;
+  background: none;
+}
+
+
+.chartButton {
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  align-items: center;
+}
 
 /* -----------PLANS END----------- */
 
@@ -443,6 +490,7 @@ button {
   width: 195px;
   height: 70px;
 }
+
 /* ----------USERS END-------------- */
 
 /* --------FOOTER START------------- */
@@ -455,8 +503,7 @@ footer {
   justify-content: space-around;
 }
 
-footer a,
-footer h4 {
+footer a, footer h4 {
   font-size: 12px;
 }
 
