@@ -66,6 +66,10 @@
   height: 35px;
 }
 
+.animation {
+  transition: color .5s 
+}
+
 .wrande {
   width: 200px;
   height: 56px;
@@ -383,8 +387,6 @@
   /* text-transform: uppercase; */
 }
 
-
-
 /* -----------FUNCTION END---------- */
 
 /* -----------PLANS START----------- */
@@ -586,7 +588,7 @@
 }
 
 .chartButton a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 550;
   color: var(--color-black);
 }
