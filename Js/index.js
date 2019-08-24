@@ -3,6 +3,10 @@ var i = 0;
 var txt = 'FUNCIONA! NOMAMES'
 var line = document.getElementById('showBenefits').innerHTML
 
+function hagoAlgo() {
+  document.getElementById('')
+}
+
 function lel() {
   const element = text[i];
   if (i < element.length) {
