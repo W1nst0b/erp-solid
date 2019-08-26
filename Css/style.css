@@ -705,3 +705,26 @@ footer h4 {
 }
 
 /* ---------FOOTER END-------------- */
+
+/* ------------GLOBAL--------------- */
+
+.colorBlack,
+.colorWhite {
+  transition: all 0.3s;
+}
+
+.colorBlack:hover {
+  border-color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.colorBlack:hover a {
+  color: var(--color-black)
+}
+
+.colorWhite:hover {
+  background-color: var(--color-black)
+}
+.colorWhite:hover a {
+  color: var(--color-white);
+}
