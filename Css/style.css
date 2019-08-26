@@ -783,10 +783,6 @@ button {
   left: 0;
 }
 
-.txt-type {
-  display: inline;
-}
-
 .txt-type .curse {
   border-right: 0.2rem solid var(--color-white);
   animation: blinker 600ms  infinite;
@@ -796,4 +792,10 @@ button {
   50% {
     opacity: 0
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 80%;
 }
