@@ -11,14 +11,14 @@
 
 <body>
   <div class="container">
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navContainer">
         <div class="logo">
           <img src="" alt="Logo ERP Solutions & Consulting">
         </div>
         <div class="menuContainer">
           <ul class="menu">
-            <li><a href="#functions">Funciones</a></li>
+            <li><a href="#function">Funciones</a></li>
             <li><a href="#plans">Planes</a></li>
             <li><a href="#benefits">Beneficios</a></li>
           </ul>
@@ -34,7 +34,7 @@
       </nav>
     </header>
   </div>
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="heroCover">
       <figure class="heroImageContainer">
         <img class="heroImage" src="./Images/heroFilter.jpg" alt="Imagen de fondo">
@@ -43,11 +43,11 @@
     <div class="heroContainer">
       <div class="heroDetails">
         <h1>Brindamos</h1>
-        <p id="showBenefits"></p>
+        <span class="txt-type" data-wait="3000" data-words='["Facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo"]'></span>
         <p>Un software que se adec&uacute;a a tus necesidades</p>
         <div class="heroButtonContainer">
           <button class="heroButton size colorBlack">
-            <a class="linkFormat" href="">Saber m&aacute;s</a>
+            <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
           </button>
         </div>
       </div>
@@ -68,7 +68,7 @@
       </div>
     </div>
   </section>
-  <section class="function">
+  <section class="function" id="function">
     <div class="functionDescription">
       <h2>Nuestras funciones</h2>
       <p>La efectividad del software est&aacute; ligada a nuestar alta taza de satisfacci&oacute;n de usuarios gracias a
@@ -137,7 +137,7 @@
       </div>
     </div>
   </section>
-  <section class="plans">
+  <section class="plans" id="plans">
     <div class="plansContainer">
       <div class="plansDescription">
         <h1>Nuestros planes</h1>
@@ -275,17 +275,17 @@
         <div class="chartSection"></div>
         <div class="chartButton">
           <button class="wrande colorBlue">
-            <a class="linkFormat" href="">Cotizar</a>
+            <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
           <button class="wrande colorBlue">
-            <a class="linkFormat" href="">Cotizar</a>
+            <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
           <button class="wrande colorBlue">
-            <a class="linkFormat" href="">Cotizar</a>
+            <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
       </div>
@@ -359,8 +359,5 @@
   </footer>
 </body>
 <script src="./Js/index.js"></script>
-<script>
-  const linea = document.getElementById()
-</script>
 
 </html>

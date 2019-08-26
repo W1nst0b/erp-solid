@@ -20,6 +20,10 @@
   --color-white-dark: #f7f9fb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ----------HEADER START------------- */
 
 .navContainer {
@@ -41,6 +45,34 @@
   width: 300px;
   justify-content: space-around;
   align-items: center;
+}
+
+.menu li {
+  position: relative;
+  transition: all 200ms ease;
+  /* border-bottom: solid 2px var(--color-black); */  
+}
+
+.menu li::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  /* padding-top: 20px; */
+  height:  1px;
+  bottom: 0px;
+  left: 50%;
+  border-radius: 10px;
+  background-color: black;
+  transition: all 200ms ease-in-out;
+}
+
+.menu li:hover {
+  transform: translateY(2px)
+}
+
+.menu li:hover::after {
+  width: 100%;
+  /* left: 0%; */
 }
 
 .menuContainer a {
@@ -734,8 +766,13 @@ button {
 }
 
 .colorBlue:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-black);
+  border-color: var(--color-black);
 }
 .colorBlue:hover a {
   color: var(--color-white);
+}
+
+.menu li:hover::after {
+  left: 0;
 }
