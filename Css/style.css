@@ -26,12 +26,28 @@ html {
 
 /* ----------HEADER START------------- */
 
+.navContainerFake {
+  display: none;
+}
+
 .navContainer {
   display: flex;
   height: 90px;
   padding: 0 60px;
   justify-content: space-around;
   align-items: center;
+}
+
+.fixed-nav .navContainerFake {
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  padding: 0 100px;
+  height: 60px;
+  width: 100%;
+  background-color: var(--color-white)
 }
 
 .menuContainer {
@@ -78,6 +94,13 @@ html {
 .menuContainer a {
   color: var(--color-black);
   font-size: 16px;
+}
+
+.navContainerFake .buttons {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 285;
 }
 
 .buttons {
@@ -799,3 +822,5 @@ button {
   top: 0;
   height: 80%;
 }
+
+.fixed-nav nav

@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="container">
     <header class="header" id="header">
-      <nav class="navContainer">
+      <nav class="navContainer" id="navContainer">
         <div class="logo">
           <img src="" alt="Logo ERP Solutions & Consulting">
         </div>
@@ -32,6 +32,23 @@
           </button>
         </div>
       </nav>
+      <nav class="navContainerFake" id="navContainerFake">
+        <div class="logo">
+          <img src="" alt="Logo ERP Solutions & Consulting">
+        </div>
+        <div class="menuContainer">
+          <ul class="menu">
+            <li><a href="#function">Funciones</a></li>
+            <li><a href="#plans">Planes</a></li>
+            <li><a href="#benefits">Beneficios</a></li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button class="contact size colorBlack">
+            <a class="linkFormat" href="">Contacto</a>
+          </button>
+        </div>
+      </nav>
     </header>
   </div>
   <section class="hero" id="hero">
@@ -44,7 +61,8 @@
       <div class="heroDetails">
         <h1>Brindamos</h1>
         <div class="txt-type" data-wait="3000"
-          data-words='["Facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo"]'></div>
+          data-words='["Facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo"]'>
+        </div>
         <p>Un software que se adec&uacute;a a tus necesidades</p>
         <div class="heroButtonContainer">
           <button class="heroButton size colorBlack">
@@ -360,6 +378,20 @@
   </footer>
   <script src="./Js/index.js"></script>
   <script src="./Js/writing.js"></script>
+  <script>
+    const nav = document.querySelector('#function');
+    const topnav = nav.offsetTop;
+    function fixNav() {
+      if (window.scrollY >= topnav) { 
+        document.body.classList.add('fixed-nav');
+        console.log("Añadido")
+      } else {
+        document.body.classList.remove('fixed-nav');
+        console.log("Removido")
+      }
+    }
+    window.addEventListener('scroll', fixNav)
+  </script>
 </body>
 
 </html>
