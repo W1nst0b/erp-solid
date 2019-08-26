@@ -1,7 +1,7 @@
 var text = ["atención 24/7", "generación de reportes", "comparación de pedidos"]
 var i = 0;
-var txt = 'FUNCIONA! NOMAMES'
-var line = document.getElementById('showBenefits').innerHTML
+var txt = 'FUNCIONA! NOMAMES';
+// var line = document.getElementById('showBenefits').innerHTML;
 
 function hagoAlgo() {
   document.getElementById('')

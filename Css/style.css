@@ -212,6 +212,12 @@ html {
   text-shadow: 3px 3px 20px var(--color-black);
 }
 
+.heroDetails span {
+  font-size: 40px;
+  color: var(--color-white);
+  text-shadow: 3px 3px 10px var(--color-black);
+}
+
 .heroDetails p {
   color: var(--color-white-dark);
   font-size: 30px;
@@ -775,4 +781,19 @@ button {
 
 .menu li:hover::after {
   left: 0;
+}
+
+.txt-type {
+  display: inline;
+}
+
+.txt-type .curse {
+  border-right: 0.2rem solid var(--color-white);
+  animation: blinker 600ms  infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0
+  }
 }
