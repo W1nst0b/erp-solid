@@ -461,8 +461,7 @@
 
 .chartButton button {
   background-color: var(--color-white);
-  border: 2px solid var(--color-black);
-  color: var(--color-black);
+  border: 2px solid var(--color-blue);
 }
 
 .planEmprendedor {
@@ -588,7 +587,7 @@
 .chartButton a {
   font-size: 20px;
   font-weight: 550;
-  color: var(--color-black);
+  color: var(--color-green);
 }
 
 /* -----------PLANS END----------- */
@@ -708,8 +707,13 @@ footer h4 {
 
 /* ------------GLOBAL--------------- */
 
+button {
+  border-radius: 3px;
+}
+
 .colorBlack,
-.colorWhite {
+.colorWhite,
+.colorBlue {
   transition: all 0.3s;
 }
 
@@ -726,5 +730,12 @@ footer h4 {
   background-color: var(--color-black)
 }
 .colorWhite:hover a {
+  color: var(--color-white);
+}
+
+.colorBlue:hover {
+  background-color: var(--color-green);
+}
+.colorBlue:hover a {
   color: var(--color-white);
 }
