@@ -395,7 +395,7 @@
     const nav = document.querySelector('#function');
     const topnav = nav.offsetTop;
     function fixNav() {
-      if (window.scrollY >= topnav) { 
+      if (window.scrollY >= topnav) {
         document.body.classList.add('fixed-nav');
         console.log("Añadido")
       } else {
@@ -404,6 +404,20 @@
       }
     }
     window.addEventListener('scroll', fixNav)
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
   </script>
 </body>
 
