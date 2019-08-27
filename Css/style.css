@@ -382,9 +382,9 @@ form {
 
 .function {
   display: flex;
-  height: 1000px;
+  height: 950px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background: rgb(36, 46, 51);
   background: linear-gradient(135deg, var(--color-skyblue) 100%, rgba(35, 179, 179) 100%, rgba(252, 252, 252, 1) 100%);
@@ -489,7 +489,7 @@ form {
 
 .plans {
   display: flex;
-  height: 840px;
+  height: 690px;
   align-items: center;
   justify-content: center;
 }
@@ -513,10 +513,10 @@ form {
 .plansDetails {
   padding: 0 50px;
   width: 90vw;
-  height: 200px;
+  height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .leyend {
@@ -685,7 +685,7 @@ form {
 .chartButton {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 10px;
   align-items: center;
 }
 
