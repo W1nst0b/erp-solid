@@ -584,8 +584,8 @@ html {
 }
 
 .sectionDetails {
+  /* background-color: var(--color-white); */
   display: flex;
-  background-color: var(--color-white-dark);
   flex-direction: column;
   align-items: flex-start;
   padding-left: 7px;
@@ -599,7 +599,7 @@ html {
   font-size: 18px;
 }
 
-.middleLetter {
+.middLetter {
   font-size: 14px;
 }
 
