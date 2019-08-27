@@ -202,16 +202,20 @@
           </div>
         </div>
         <div class="chartSection drop">
-          <div class="sectionDetails">
-            <h3 class="middLetter">Sistema de ventas</h3>
-            <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
-            <div class="sistemaVenta hidden">Cotizaciones</div>
-            <div class="sistemaVenta hidden">Pedidos</div>
-            <div class="sistemaVenta hidden">Facturaci&oacute;n electr&oacute;nica</div>
+          <button class="pera">
+            <div class="sectionDetails">
+              <h3 class="middLetter">Sistema de ventas</h3>
+              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+            </div>
+            <figure class="dropDownContainer">
+              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+            </figure>
+          </button>
+          <div id="son" class="son hidden">
+            <div class="sistemaVenta">Cotizaciones</div>
+            <div class="sistemaVenta">Pedidos</div>
+            <div class="sistemaVenta">Facturaci&oacute;n electr&oacute;nica</div>
           </div>
-          <figure class="dropDownContainer">
-            <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-          </figure>
         </div>
         <div class="chartSection check">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
@@ -268,11 +272,10 @@
           <div class="sectionDetails">
             <h3 class="middLetter">Sistema log&iacute;stico</h3>
             <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
-            <div class="sistemaLogistico hidden"></div>
-            <div class="sistema hidden">Requerimiento</div>
-            <div class="sistema hidden">Cuadro comparativo</div>
-            <div class="sistema hidden">Log&iacute;stica</div>
-            <div class="sistema hidden">Importaciones</div>
+            <div class="sistemaLogistico hidden">Requerimiento</div>
+            <div class="sistemaLogistico hidden">Cuadro comparativo</div>
+            <div class="sistemaLogistico hidden">Log&iacute;stica</div>
+            <div class="sistemaLogistico hidden">Importaciones</div>
           </div>
           <figure class="dropDownContainer">
             <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
@@ -404,17 +407,16 @@
       }
     }
     window.addEventListener('scroll', fixNav)
-    var acc = document.getElementsByClassName("accordion");
+    var pera = document.getElementsByClassName("pera");
     var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
+    for (i = 0; i < pera.length; i++) {
+      pera[i].addEventListener("click", () => {
+        // this.classList.toggle("hidden");
+        var son = document.getElementById("son");
+        if (son.style.display === "block") {
+          son.style.display = "none";
         } else {
-          panel.style.display = "block";
+          son.style.display = "block";
         }
       });
     }
