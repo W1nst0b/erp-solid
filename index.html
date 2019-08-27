@@ -161,7 +161,7 @@
   <section class="plans" id="plans">
     <div class="plansContainer">
       <div class="plansDescription">
-        <h1>Nuestros planes</h1>
+        <h2>Nuestros planes</h2>
         <div class="plansDetails">
           <p>Implementamos desde las caracter&iacute;sticas<br>esenciales hasta las opciones<br>m&aacute;s avanzadas</p>
           <div class="leyend">
@@ -464,7 +464,7 @@
       </div>
     </div>
   </section>
-  <section class="users">
+  <!-- <section class="users">
     <h2>Utilizado por</h2>
     <div class="brand">
       <div class="logoUsuario"><a href=""><img src="" alt=""></a></div>
@@ -472,7 +472,7 @@
       <div class="logoUsuario"><a href=""><img src="" alt=""></a></div>
       <div class="logoUsuario"><a href=""><img src="" alt=""></a></div>
     </div>
-  </section>
+  </section> -->
   <footer id="footer">
     <div class="copyright">
       <h4>© 2019 ERP Systems & Consulting. Todos los derechos reservados.</h4>
@@ -502,10 +502,8 @@
     function fixNav() {
       if (window.scrollY >= topnav) {
         document.body.classList.add('fixed-nav');
-        console.log("Añadido")
       } else {
         document.body.classList.remove('fixed-nav');
-        console.log("Removido")
       }
     }
     window.addEventListener('scroll', fixNav)
