@@ -67,23 +67,25 @@
       </div>
       <div class="form">
         <div class="background"></div>
-        <div class="formContainer">
-          <input type="email" placeholder="Email" name="" id="">
-          <input type="text" placeholder="Nombre" name="" id="">
-          <input type="number" placeholder="N&uacute;mero telef&oacute;nico" name="" id="">
-          <input type="number" placeholder="Ruc" name="" id="">
-          <select name="plan" id="plan">
-            <option value="Plan emprendedor">Plan emprendedor</option>
-            <option value="Plan mype">Plan mype</option>
-            <option value="Plan pyme">Plan pyme</option>
-          </select>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" name="" id="">Acepto los t&eacute;rminos y condiciones.
-        </div>
-        <button class="formButton size" type="submit">
-          <a class="linkFormat" href="">Cotizar</a>
-        </button>
+        <form action="send.php" method="POST" onsubmit="return validar()">
+          <div class="formContainer">
+            <input type="email" placeholder="Email" name="email" id="">
+            <input type="text" placeholder="Nombre" name="nombre" id="">
+            <input type="number" placeholder="N&uacute;mero telef&oacute;nico" name="numero" id="">
+            <input type="number" placeholder="Ruc" name="ruc" id="">
+            <select name="plan" id="plan">
+              <option value="Plan emprendedor">Plan emprendedor</option>
+              <option value="Plan mype">Plan mype</option>
+              <option value="Plan pyme">Plan pyme</option>
+            </select>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="" required>Acepto los t&eacute;rminos y condiciones.
+          </div>
+          <button class="formButton size" type="submit" id="send">
+            <a class="linkFormat" href="">Cotizar</a>
+          </button>
+        </form>
       </div>
     </div>
   </section>
