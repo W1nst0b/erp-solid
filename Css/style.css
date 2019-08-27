@@ -33,7 +33,7 @@ html {
 
 .navContainer {
   display: flex;
-  height: 90px;
+  height: 12vh;
   padding: 0 60px;
   justify-content: space-around;
   align-items: center;
@@ -46,7 +46,7 @@ html {
   align-items: center;
   position: fixed;
   padding: 0 100px;
-  height: 40px;
+  height: 7vh;
   width: 100%;
   background-color: var(--color-white)
 }
@@ -117,7 +117,7 @@ html {
 
 /* Global style for buttons */
 .size {
-  width: 125px;
+  width: 10vw;
   height: 35px;
 }
 
@@ -181,7 +181,7 @@ html {
   display: flex;
   justify-content: center;
   min-height: 590px;
-  height: 660px;
+  height: 80vh;
 }
 
 .heroCover {
