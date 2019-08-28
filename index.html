@@ -533,7 +533,7 @@
     // }
 
     var venButton = document.getElementById("venButton");
-    document.getElementById("venButton").addEventListener("click", () => {
+    venButton.addEventListener("click", () => {
       var venDisplay = document.getElementById("venDisplay");
       var finToggle = document.querySelectorAll("#finToggle");
       console.log(venDisplay)
@@ -551,22 +551,22 @@
         venDisplay.style.display = "grid";
       }
     })
-    // var finButton = document.getElementById("finButton");
-    // finButton.addEventListener("click", () => {
-    //   var finDisplay = document.getElementById("finDisplay");
-    //   var finToggle = document.getElementById("finToggle");
-    //   if (Display.style.display === "grid") {
-    //     Display.style.display === "none";
-    //     for (let i = 0; i < finToggle.length; i++) {
-    //       finToggle[i].style.marginTop = 0;
-    //     }
-    //   } else {
-    //     for (let i = 0; i < finToggle.length; i++) {
-    //       finToggle[i].style.marginTop = 0;
-    //     }
-    //     Display.style.display === "grid"
-    //   }
-    // })
+    var finButton = document.getElementById("finButton");
+    finButton.addEventListener("click", () => {
+      var finDisplay = document.getElementById("finDisplay");
+      var finToggle = document.getElementById("finToggle");
+      if (Display.style.display === "grid") {
+        Display.style.display === "none";
+        for (let i = 0; i < finToggle.length; i++) {
+          finToggle[i].style.marginTop = 0;
+        }
+      } else {
+        for (let i = 0; i < finToggle.length; i++) {
+          finToggle[i].style.marginTop = 0;
+        }
+        Display.style.display === "grid"
+      }
+    })
     // var proButton = document.getElementById("proButton");
     // proButton.addEventListener("click", () => {
     //   var proDisplay = document.getElementById("proDisplay");
