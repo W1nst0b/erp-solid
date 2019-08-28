@@ -707,8 +707,48 @@ form {
   background-color: var(--color-blue);
 }
 
-.whiteBg {
-  background-color: #cacaca
+#finDisplay {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 160px;
+  /* grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 50px 50px 50px; */
+  display: none;
+  grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
+  background-color: var(--color-blue);
+}
+
+#proDisplay {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 160px;
+  /* grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 50px 50px 50px; */
+  display: none;
+  grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
+  background-color: var(--color-blue);
+}
+
+#logDisplay {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 209px;
+  /* grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 50px 50px 50px; */
+  display: none;
+  grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
+  background-color: var(--color-blue);
+}
+
+#conDisplay {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px;
+  /* grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 50px 50px 50px; */
+  display: none;
+  grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
+  background-color: var(--color-blue);
 }
 
 .option {
@@ -909,4 +949,8 @@ button {
 
 #hidden {
   display: none;
+}
+
+.whiteBg {
+  background-color: #f0f0f0
 }
