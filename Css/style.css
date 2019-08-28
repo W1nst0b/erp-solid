@@ -489,7 +489,8 @@ form {
 
 .plans {
   display: flex;
-  height: 690px;
+  height: auto;
+  min-height: 690px;
   align-items: center;
   justify-content: center;
 }
@@ -695,18 +696,15 @@ form {
   color: #242E33;
 }
 
-.son {
-  /* border: 1px solid red; */
+.displayGrid {
+  border: 1px solid red;
   width: 100%;
   height: 160px;
-  /* width: 100%;
-  height */
   /* grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 50px 50px 50px; */
   display: grid;
   grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
   background-color: var(--color-blue);
-  transition: max-height 0.2 ease-in;
 }
 
 .whiteBg {

@@ -203,8 +203,8 @@
             <h3 class="normalLetter">Plan pyme</h3>
           </div>
         </div>
-        <div class="chartSection">
-          <button class="pera">
+        <div class="chartSection system">
+          <button class="pushDown">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema de ventas</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -213,7 +213,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
             <div class="sistemaVenta whiteBg option">Cotizaciones</div>
             <div class="littleIcon whiteBg">
               <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
@@ -255,8 +255,8 @@
         <div class="chartSection check">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection" id="drop">
-          <button class="pera">
+        <div class="chartSection system" id="toggleMargin">
+          <button class="pushDown">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema financiero</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -265,7 +265,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
             <div class="sistemaFinanciero whiteBg option">Caja y bancos</div>
             <div class="littleIcon whiteBg">
               <img src="" alt="" class="planIco">
@@ -298,17 +298,17 @@
             </div>
           </div>
         </div>
-        <div class="chartSection check" id="drop">
+        <div class="chartSection check togglePadding" id="">
           <img class="planIcon" src="./Images/maso.png" alt="Icono">
         </div>
-        <div class="chartSection check" id="drop">
+        <div class="chartSection check togglePadding" id="">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection check" id="drop">
+        <div class="chartSection check togglePadding" id="">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pera">
+        <div class="chartSection system">
+          <button class="pushDown">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema de Provisiones</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -317,7 +317,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
             <div class="sistemaProvision hidden">Cuentas por pagar</div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
@@ -341,8 +341,8 @@
         <div class="chartSection check">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pera">
+        <div class="chartSection system">
+          <button class="pushDown">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema log&iacute;stico</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -352,7 +352,7 @@
             </figure>
           </button>
           <!-- FIX THIS -->
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
             <div class="sistemaLogistico hidden">Requerimiento</div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
@@ -380,8 +380,8 @@
         <div class="chartSection check">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pera">
+        <div class="chartSection system">
+          <button class="pushDown">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema contable</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -390,7 +390,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
             <div class="sistemaContable hidden">Contabilidad</div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
@@ -400,7 +400,7 @@
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
           </div>
-          <div id="son" class="son hidden">
+          <div id="hiddenList" class="displayGrid hidden">
           </div>
         </div>
         <div class="chartSection check">
@@ -507,25 +507,33 @@
       }
     }
     window.addEventListener('scroll', fixNav)
-    var pera = document.getElementsByClassName("pera");
+    var pushDown = document.getElementsByClassName("pushDown");
     var i;
-    for (i = 0; i < pera.length; i++) {
-      pera[i].addEventListener("click", () => {
+    for (i = 0; i < pushDown.length; i++) {
+      pushDown[i].addEventListener("click", () => {
         // this.classList.toggle("hidden");
         // e.preventDefault();
-        var son = document.getElementById("son");
-        var drop = document.getElementById("drop");
-        if (son.style.display === "grid") {
-          drop.style.marginTop = 0;
-          son.style.display = "none";
+        var hiddenList = document.getElementById("hiddenList");
+        var toggleMargin = document.getElementById("toggleMargin");
+        var togglePadding = document.getElementsByClassName("togglePadding");
+        // var toggleMargin = document.getElementById("toggleMargin");
+        // var toggleMargin = document.querySelectorAll("#toggleMargin");
+        // var dropSelector = toggleMargin[i]
+        if (hiddenList.style.display === "grid") {
+          for (let i = 0; i < togglePadding.length; i++) {
+            togglePadding[i].style.marginTop = 0
+          }
+          toggleMargin.style.marginTop = 0;
+          hiddenList.style.display = "none";
         } else {
-          drop.style.marginTop = "156px";
-          son.style.display = "grid";
+          for (let i = 0; i < togglePadding.length; i++) {
+            togglePadding[i].style.marginTop = "156px"
+          }
+          toggleMargin.style.marginTop = "156px";
+          hiddenList.style.display = "grid";
         }
       });
     }
-    var papa = document.querySelectorAll("#son");
-    console.log(papa[1]);
   </script>
 </body>
 
