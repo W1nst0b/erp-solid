@@ -697,22 +697,19 @@ form {
   color: #242E33;
 }
 
-.variableDisplay {
+#venDisplay {
   /* border: 1px solid red; */
   width: 100%;
   height: 160px;
-  /* width: 100%;
-  height */
   /* grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 50px 50px 50px; */
-  display: grid;
+  display: none;
   grid-template: "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon" "option littleIcon littleIcon littleIcon";
   background-color: var(--color-blue);
-  transition: max-height 0.2 ease-in;
 }
 
 .whiteBg {
-  background-color: var(--color-white)
+  background-color: #cacaca
 }
 
 .option {

@@ -56,7 +56,7 @@
       <div class="heroDetails">
         <h1>Brindamos</h1>
         <div class="txt-type" data-wait="3000"
-          data-words='["Facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo"]'>
+          data-words='["Sistema de facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo", "Servicio t&eacute;cnico 24/7"]'>
         </div>
         <p>Un software que se adec&uacute;a a tus necesidades</p>
         <div class="heroButtonContainer">
@@ -203,8 +203,8 @@
             <h3 class="normalLetter">Plan pyme</h3>
           </div>
         </div>
-        <div class="chartSection">
-          <button class="pushDown">
+        <div class="chartSection pushedSection">
+          <button id="venButton">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema de ventas</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -213,7 +213,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="variableDisplay" class="variableDisplay hidden">
+          <div id="venDisplay" class="venDisplay hidden">
             <div class="sistemaVenta whiteBg option">Cotizaciones</div>
             <div class="littleIcon whiteBg">
               <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
@@ -255,8 +255,8 @@
         <div class="chartSection check">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection" id="drop">
-          <button class="pushDown">
+        <div class="chartSection pushedSection" id="finToggle">
+          <button id="finButton">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema financiero</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -265,7 +265,7 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="variableDisplay" class="variableDisplay hidden">
+          <div id="finDisplay" class="finDisplay hidden">
             <div class="sistemaFinanciero whiteBg option">Caja y bancos</div>
             <div class="littleIcon whiteBg">
               <img src="" alt="" class="planIco">
@@ -298,17 +298,17 @@
             </div>
           </div>
         </div>
-        <div class="chartSection check" id="togglePadding">
+        <div class="chartSection check" id="finToggle">
           <img class="planIcon" src="./Images/maso.png" alt="Icono">
         </div>
-        <div class="chartSection check" id="togglePadding">
+        <div class="chartSection check" id="finToggle">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection check" id="togglePadding">
+        <div class="chartSection check" id="finToggle">
           <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pushDown">
+        <div class="chartSection pushedSection" id="proToggle">
+          <button id="proButton">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema de Provisiones</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -319,30 +319,30 @@
           </button>
           <div id="variableDisplay" class="variableDisplay hidden">
             <div class="sistemaProvision hidden">Cuentas por pagar</div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
             <div class="sistemaProvision hidden">Cuentas por cobrar</div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
             <div class="sistemaProvision hidden">Gesti&oacute;n de letras</div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
           </div>
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          <img class="planIcon" id="proToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pushDown">
+        <div class="chartSection pushedSection logToggle">
+          <button id="logButton">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema log&iacute;stico</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -352,7 +352,7 @@
             </figure>
           </button>
           <!-- FIX THIS -->
-          <div id="variableDisplay" class="variableDisplay hidden">
+          <div id="logDisplay" class="logDisplay hidden">
             <div class="sistemaLogistico hidden">Requerimiento</div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
@@ -372,16 +372,16 @@
           </div>
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          <img class="planIcon" id="logToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
-        <div class="chartSection">
-          <button class="pushDown">
+        <div class="chartSection pushedSection conToggle">
+          <button id="conButton">
             <div class="sectionDetails">
               <h3 class="middLetter">Sistema contable</h3>
               <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
@@ -390,9 +390,9 @@
               <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
             </figure>
           </button>
-          <div id="variableDisplay" class="variableDisplay hidden">
+          <div id="conDisplay" class="conDisplay hidden">
             <div class="sistemaContable hidden">Contabilidad</div>
-            <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
+            <div class="littleIcon whiteBg"><img src="./Images/" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="sistemaContable hidden">Estado financiero</div>
@@ -400,17 +400,18 @@
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
             <div class="littleIcon whiteBg"><img src="" alt="" class="planIcon"></div>
           </div>
-          <div id="variableDisplay" class="variableDisplay hidden">
-          </div>
+          <!-- I dont know what is this -->
+          <!-- <div id="variableDisplay" class="variableDisplay hidden">
+          </div> -->
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="conToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="conToggle" src="./Images/maso.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
         <div class="chartSection"></div>
         <div class="chartButton">
@@ -508,30 +509,112 @@
       }
     }
     window.addEventListener('scroll', fixNav)
-    var pushDown = document.getElementsByClassName("pushDown");
-    var i;
-    for (i = 0; i < pushDown.length; i++) {
-      pushDown[i].addEventListener("click", () => {
-        // this.classList.toggle("hidden");
-        // e.preventDefault();
-        var variableDisplay = document.getElementById("variableDisplay");
-        var drop = document.getElementById("drop");
-        var togglePadding = document.querySelectorAll("#togglePadding");
-        if (variableDisplay.style.display === "grid") {
-          for (let i = 0; i < togglePadding.length; i++) {
-            togglePadding[i].style.marginTop = 0;
-          }
-          drop.style.marginTop = 0;
-          variableDisplay.style.display = "none";
-        } else {
-          for (let i = 0; i < togglePadding.length; i++) {
-            togglePadding[i].style.marginTop = "156px";
-          }
-          drop.style.marginTop = "156px";
-          variableDisplay.style.display = "grid";
+
+    // --------------------------------------------
+    // var pushedSection = document.getElementsByClassName("pushedSection");
+    // var pushDown = document.getElementsByClassName("pushDown");
+    // var i;
+    // for (i = 0; i < pushedSection.length; i++) {
+    //   pushDown[i].addEventListener("click", () => {
+    //     var venDisplay = document.getElementById("venDisplay");
+    //     var finToggle = document.querySelectorAll("#finToggle");
+    //     if (venDisplay.style.display === "grid") {
+    //       for (let i = 0; i < finToggle.length; i++) {
+    //         finToggle[i].style.marginTop = 0;
+    //       }
+    //       venDisplay.style.display = "none";
+    //     } else {
+    //       for (let i = 0; i < finToggle.length; i++) {
+    //         finToggle[i].style.marginTop = "156px";
+    //       }
+    //       venDisplay.style.display = "grid";
+    //     }
+    //   });
+    // }
+
+    var venButton = document.getElementById("venButton");
+    document.getElementById("venButton").addEventListener("click", () => {
+      var venDisplay = document.getElementById("venDisplay");
+      var finToggle = document.querySelectorAll("#finToggle");
+      console.log(venDisplay)
+      if (venDisplay.style.display === "grid") {
+        console.log("Hola")
+        for (let i = 0; i < finToggle.length; i++) {
+          finToggle[i].style.marginTop = 0;
         }
-      });
-    }
+        venDisplay.style.display = "none";
+      } else {
+        console.log("Adios")
+        for (let i = 0; i < finToggle.length; i++) {
+          finToggle[i].style.marginTop = "156px";
+        }
+        venDisplay.style.display = "grid";
+      }
+    })
+    // var finButton = document.getElementById("finButton");
+    // finButton.addEventListener("click", () => {
+    //   var finDisplay = document.getElementById("finDisplay");
+    //   var finToggle = document.getElementById("finToggle");
+    //   if (Display.style.display === "grid") {
+    //     Display.style.display === "none";
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //   } else {
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //     Display.style.display === "grid"
+    //   }
+    // })
+    // var proButton = document.getElementById("proButton");
+    // proButton.addEventListener("click", () => {
+    //   var proDisplay = document.getElementById("proDisplay");
+    //   var proToggle = document.getElementById("proToggle");
+    //   if (Display.style.display === "grid") {
+    //     Display.style.display === "none";
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //   } else {
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //     Display.style.display === "grid"
+    //   }
+    // })
+    // var logButton = document.getElementById("logButton");
+    // logButton.addEventListener("click", () => {
+    //   var logDisplay = document.getElementById("logDisplay");
+    //   var logToggle = document.getElementById("logToggle");
+    //   if (Display.style.display === "grid") {
+    //     Display.style.display === "none";
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //   } else {
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //     Display.style.display === "grid"
+    //   }
+    // })
+    // var conButton = document.getElementById("conButton");
+    // conButton.addEventListener("click", () => {
+    //   var conDisplay = document.getElementById("conDisplay");
+    //   var conToggle = document.getElementById("conToggle");
+    //   if (Display.style.display === "grid") {
+    //     Display.style.display === "none";
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //   } else {
+    //     for (let i = 0; i < finToggle.length; i++) {
+    //       finToggle[i].style.marginTop = 0;
+    //     }
+    //     Display.style.display === "grid"
+    //   }
+    // })
   </script>
 </body>
 
