@@ -827,8 +827,12 @@ form {
   color: var(--color-green);
 }
 
+.benefitsTitle p {
+  color: var(--color-blue);
+}
+
 .benefitsContainer {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: inherit;
   justify-content: space-between;
   width: 85%;
