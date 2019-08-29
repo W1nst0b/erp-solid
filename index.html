@@ -45,69 +45,69 @@
         </div>
       </nav>
     </header>
-  </div>
-  <section class="hero" id="hero">
-    <div class="heroCover">
-      <figure class="heroImageContainer">
-        <img class="heroImage" src="./Images/heroFilter.jpg" alt="Imagen de fondo">
-      </figure>
-      <div class="heroContainer">
-        <div class="heroDetails">
-          <h1>Brindamos</h1>
-          <div class="txt-type" data-wait="3000"
-            data-words='["Sistema de facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo", "Servicio t&eacute;cnico 24/7"]'>
-          </div>
-          <p>Un software que se adec&uacute;a a tus necesidades</p>
-          <div class="heroButtonContainer">
-            <button class="heroButton size colorBlack">
-              <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
-            </button>
-          </div>
-        </div>
-        <div class="form">
-          <div class="background"></div>
-          <form action="send.php" method="POST" onsubmit="return validar()">
-            <div class="formContainer">
-              <input type="email" placeholder="Email" name="email" id="">
-              <input type="text" placeholder="Nombre" name="nombre" id="">
-              <input type="number" placeholder="N&uacute;mero telef&oacute;nico" name="numero" id="">
-              <input type="number" placeholder="Ruc" name="ruc" id="">
-              <select name="plan" id="plan">
-                <option value="none" selected>¡Escoja su plan!</option>
-                <option value="emprendedor">Plan emprendedor</option>
-                <option value="mype">Plan mype</option>
-                <option value="pyme">Plan pyme</option>
-              </select>
+    <section class="hero" id="hero">
+      <div class="heroCover">
+        <figure class="heroImageContainer">
+          <img class="heroImage" src="./Images/heroFilter.jpg" alt="Imagen de fondo">
+        </figure>
+        <div class="heroContainer">
+          <div class="heroDetails">
+            <h1>Brindamos</h1>
+            <div class="txt-type" data-wait="3000"
+              data-words='["Sistema de facturaci&oacute;n electr&oacute;nica", "Sistema contable incorporado", "Balance de caja", "An&aacute;lisis financiero instantaneo", "Servicio t&eacute;cnico 24/7"]'>
             </div>
-            <div class="checkbox">
-              <input type="checkbox" name="" id="" required>Acepto los t&eacute;rminos y condiciones.
+            <p>Un software que se adec&uacute;a a tus necesidades</p>
+            <div class="heroButtonContainer">
+              <button class="heroButton size colorBlack">
+                <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
+              </button>
             </div>
-            <button class="formButton size" type="submit" id="send">
-              <a class="linkFormat" href="">Cotizar</a>
-            </button>
-          </form>
+          </div>
+          <div class="form">
+            <div class="background"></div>
+            <form action="send.php" method="POST" onsubmit="return validar()">
+              <div class="formContainer">
+                <input type="email" placeholder="Email" name="email" id="">
+                <input type="text" placeholder="Nombre" name="nombre" id="">
+                <input type="number" placeholder="N&uacute;mero telef&oacute;nico" name="numero" id="">
+                <input type="number" placeholder="Ruc" name="ruc" id="">
+                <select name="plan" id="plan">
+                  <option value="none" selected>¡Escoja su plan!</option>
+                  <option value="emprendedor">Plan emprendedor</option>
+                  <option value="mype">Plan mype</option>
+                  <option value="pyme">Plan pyme</option>
+                </select>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" required>Acepto los t&eacute;rminos y condiciones.
+              </div>
+              <button class="formButton size" type="submit" id="send">
+                <a class="linkFormat" href="">Cotizar</a>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="function" id="function">
-    <div class="functionDescription">
-      <h2>Nuestras funciones</h2>
-      <p>La efectividad del software est&aacute; ligada a nuestar alta taza de satisfacci&oacute;n de usuarios gracias a
-        las funcionalidades que ofrecemos</p>
-    </div>
-    <div class="functionContainer">
-      <div class="functionItem">
-        <h4>Inventario</h4>
-        <figure class="itemImageContainer">
-          <img class="imgInventario" src="./Images/inventario.png" alt="Imagen inventario">
-        </figure>
-        <p>Mejore la gesti&oacute;n de sus productos y establezca un control para su inventario</p>
-        <!-- <button class="size colorBlack">
+    </section>
+    <section class="function" id="function">
+      <div class="functionDescription">
+        <h2>Nuestras funciones</h2>
+        <p>La efectividad del software est&aacute; ligada a nuestar alta taza de satisfacci&oacute;n de usuarios gracias
+          a
+          las funcionalidades que ofrecemos</p>
+      </div>
+      <div class="functionContainer">
+        <div class="functionItem">
+          <h4>Inventario</h4>
+          <figure class="itemImageContainer">
+            <img class="imgInventario" src="./Images/inventario.png" alt="Imagen inventario">
+          </figure>
+          <p>Mejore la gesti&oacute;n de sus productos y establezca un control para su inventario</p>
+          <!-- <button class="size colorBlack">
           <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
         </button> -->
-      </div>
-      <!-- <div class="functionItem">
+        </div>
+        <!-- <div class="functionItem">
         <h4>Log&iacute;stica</h4>
         <figure class="itemImageContainer">
           <img class="imgLogistica" src="./Images/logistica.png" alt="Imagen log&iacute;stica">
@@ -117,17 +117,17 @@
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
       </div> -->
-      <div class="functionItem">
-        <h4>Facturaci&oacute;n<br>electr&oacute;nica</h4>
-        <figure class="itemImageContainer">
-          <img class="imgFactura" src="./Images/facturacion.png" alt="Imagen facturaci&oacute;n">
-        </figure>
-        <p>Emita facturas electr&oacute;nicas que cumplan los par&aacute;metros establecidos por sunat</p>
-        <!-- <button class="size colorBlack">
+        <div class="functionItem">
+          <h4>Facturaci&oacute;n<br>electr&oacute;nica</h4>
+          <figure class="itemImageContainer">
+            <img class="imgFactura" src="./Images/facturacion.png" alt="Imagen facturaci&oacute;n">
+          </figure>
+          <p>Emita facturas electr&oacute;nicas que cumplan los par&aacute;metros establecidos por sunat</p>
+          <!-- <button class="size colorBlack">
           <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
         </button> -->
-      </div>
-      <!-- <div class="functionItem">
+        </div>
+        <!-- <div class="functionItem">
         <h4>Cuadro comparativo</h4>
         <figure class="itemImageContainer">
           <img class="imgCuadro" src="./Images/cuadroComparativo.png" alt="Imagen cuadro comparativo">
@@ -137,35 +137,35 @@
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
       </div> -->
-      <div class="functionItem">
-        <h4>Libro de<br>compras y ventas</h4>
-        <figure class="itemImageContainer">
-          <img class="imgLibro" src="./Images/pngLibros.png" alt="Imagen de libros">
-        </figure>
-        <p>Realice un an&aacute;lisis profundo de sus compras y ventas</p>
-        <!-- <button class="size colorBlack">
+        <div class="functionItem">
+          <h4>Libro de<br>compras y ventas</h4>
+          <figure class="itemImageContainer">
+            <img class="imgLibro" src="./Images/pngLibros.png" alt="Imagen de libros">
+          </figure>
+          <p>Realice un an&aacute;lisis profundo de sus compras y ventas</p>
+          <!-- <button class="size colorBlack">
           <a class="linkFormat" href="#conToggle">Saber m&aacute;s</a>
         </button> -->
-      </div>
-      <div class="functionItem">
-        <h4>Contabilidad</h4>
-        <figure class="itemImageContainer">
-          <img class="imgConta" src="./Images/contabilidad.png" alt="Imagen contabilidad">
-        </figure>
-        <p>Realice operacions complejas de contabilidad sin necesidad de conocimientos profundos</p>
-        <!-- <button class="size colorBlack">
+        </div>
+        <div class="functionItem">
+          <h4>Contabilidad</h4>
+          <figure class="itemImageContainer">
+            <img class="imgConta" src="./Images/contabilidad.png" alt="Imagen contabilidad">
+          </figure>
+          <p>Realice operacions complejas de contabilidad sin necesidad de conocimientos profundos</p>
+          <!-- <button class="size colorBlack">
           <a class="linkFormat" href="#conToggle">Saber m&aacute;s</a>
         </button> -->
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="plans" id="plans">
-    <div class="plansContainer">
-      <div class="plansDescription">
-        <h2>Nuestros planes</h2>
-        <div class="plansDetails">
-          <p>Implementamos desde las caracter&iacute;sticas esenciales hasta las opciones m&aacute;s avanzadas</p>
-          <!-- <div class="leyend">
+    </section>
+    <section class="plans" id="plans">
+      <div class="plansContainer">
+        <div class="plansDescription">
+          <h2>Nuestros planes</h2>
+          <div class="plansDetails">
+            <p>Implementamos desde las caracter&iacute;sticas esenciales hasta las opciones m&aacute;s avanzadas</p>
+            <!-- <div class="leyend">
             <div class="options option1">
               <div class="icon">
                 <img src="./Images/maso.png" alt="Leyenda">
@@ -185,292 +185,292 @@
               <p>M&oacute;dulo no implementado en el plan</p>
             </div>
           </div> -->
-        </div>
-      </div>
-      <div class="plansChart">
-        <div class="chartSection"></div>
-        <div class="chartSection planEmprendedor">
-          <div class="content">
-            <h3 class="normalLetter">Plan emprendedor</h3>
           </div>
         </div>
-        <div class="chartSection planMype">
-          <div class="content">
-            <h3 class="normalLetter">Plan mype</h3>
-          </div>
-        </div>
-        <div class="chartSection planPyme">
-          <div class="content">
-            <h3 class="normalLetter">Plan pyme</h3>
-          </div>
-        </div>
-        <div class="chartSection pushedSection">
-          <button id="venButton">
-            <div class="sectionDetails">
-              <h3 class="middLetter">Sistema de ventas</h3>
-              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
-            </div>
-            <figure class="dropDownContainer">
-              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-            </figure>
-          </button>
-          <div id="venDisplay" class="venDisplay hidden">
-            <div class="sistemaVenta whiteBg option">Cotizaciones</div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="sistemaVenta whiteBg option">Pedidos</div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="sistemaVenta whiteBg option">Facturaci&oacute;n electr&oacute;nica</div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+        <div class="plansChart">
+          <div class="chartSection"></div>
+          <div class="chartSection planEmprendedor">
+            <div class="content">
+              <h3 class="normalLetter">Plan emprendedor</h3>
             </div>
           </div>
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection pushedSection" id="finToggle">
-          <button id="finButton">
-            <div class="sectionDetails">
-              <h3 class="middLetter">Sistema financiero</h3>
-              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
-            </div>
-            <figure class="dropDownContainer">
-              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-            </figure>
-          </button>
-          <div id="finDisplay" class="finDisplay hidden">
-            <div class="sistemaFinanciero whiteBg option">Caja y bancos</div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="sistemaFinanciero whiteBg option">Cheque voucher's</div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
-            </div>
-            <div class="sistemaFinanciero whiteBg option">Fondos fijos (rendiciones)</div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/manan.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/manan.png" alt="" class="planIco">
-            </div>
-            <div class="littleIcon whiteBg">
-              <img src="./Images/todoBeun.png" alt="" class="planIco">
+          <div class="chartSection planMype">
+            <div class="content">
+              <h3 class="normalLetter">Plan mype</h3>
             </div>
           </div>
-        </div>
-        <div class="chartSection check" id="finToggle">
-          <img class="planIcon" src="./Images/maso.png" alt="Icono">
-        </div>
-        <div class="chartSection check" id="finToggle">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection check" id="finToggle">
-          <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection pushedSection" id="proToggle">
-          <button id="proButton">
-            <div class="sectionDetails">
-              <h3 class="middLetter">Sistema de Provisiones</h3>
-              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+          <div class="chartSection planPyme">
+            <div class="content">
+              <h3 class="normalLetter">Plan pyme</h3>
             </div>
-            <figure class="dropDownContainer">
-              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-            </figure>
-          </button>
-          <div id="proDisplay" class="proDisplay hidden">
-            <div class="sistemaProvision whiteBg option">Cuentas por pagar</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaProvision whiteBg option">Cuentas por cobrar</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaProvision whiteBg option">Gesti&oacute;n de letras</div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
           </div>
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="proToggle" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection pushedSection" id="logToggle">
-          <button id="logButton">
-            <div class="sectionDetails">
-              <h3 class="middLetter">Sistema log&iacute;stico</h3>
-              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+          <div class="chartSection pushedSection">
+            <button id="venButton">
+              <div class="sectionDetails">
+                <h3 class="middLetter">Sistema de ventas</h3>
+                <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+              </div>
+              <figure class="dropDownContainer">
+                <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+              </figure>
+            </button>
+            <div id="venDisplay" class="venDisplay hidden">
+              <div class="sistemaVenta whiteBg option">Cotizaciones</div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="sistemaVenta whiteBg option">Pedidos</div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="sistemaVenta whiteBg option">Facturaci&oacute;n electr&oacute;nica</div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+              </div>
             </div>
-            <figure class="dropDownContainer">
-              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-            </figure>
-          </button>
-          <!-- FIX THIS -->
-          <div id="logDisplay" class="logDisplay hidden">
-            <div class="sistemaLogistico whiteBg option">Requerimiento</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaLogistico whiteBg option">Cuadro comparativo</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaLogistico whiteBg option">Log&iacute;stica</div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaLogistico whiteBg option">Importaciones</div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
           </div>
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="logToggle" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection pushedSection" id="conToggle">
-          <button id="conButton">
-            <div class="sectionDetails">
-              <h3 class="middLetter">Sistema contable</h3>
-              <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+          <div class="chartSection check">
+            <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection pushedSection" id="finToggle">
+            <button id="finButton">
+              <div class="sectionDetails">
+                <h3 class="middLetter">Sistema financiero</h3>
+                <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+              </div>
+              <figure class="dropDownContainer">
+                <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+              </figure>
+            </button>
+            <div id="finDisplay" class="finDisplay hidden">
+              <div class="sistemaFinanciero whiteBg option">Caja y bancos</div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="sistemaFinanciero whiteBg option">Cheque voucher's</div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
+              <div class="sistemaFinanciero whiteBg option">Fondos fijos (rendiciones)</div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/manan.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/manan.png" alt="" class="planIco">
+              </div>
+              <div class="littleIcon whiteBg">
+                <img src="./Images/todoBeun.png" alt="" class="planIco">
+              </div>
             </div>
-            <figure class="dropDownContainer">
-              <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
-            </figure>
-          </button>
-          <div id="conDisplay" class="conDisplay hidden">
-            <div class="sistemaContable whiteBg option">Contabilidad</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="sistemaContable whiteBg option">Estado financiero</div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
-            <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
           </div>
-          <!-- I dont know what is this -->
-          <!-- <div id="variableDisplay" class="variableDisplay hidden">
+          <div class="chartSection check" id="finToggle">
+            <img class="planIcon" src="./Images/maso.png" alt="Icono">
+          </div>
+          <div class="chartSection check" id="finToggle">
+            <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection check" id="finToggle">
+            <img class="planIcon" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection pushedSection" id="proToggle">
+            <button id="proButton">
+              <div class="sectionDetails">
+                <h3 class="middLetter">Sistema de Provisiones</h3>
+                <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+              </div>
+              <figure class="dropDownContainer">
+                <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+              </figure>
+            </button>
+            <div id="proDisplay" class="proDisplay hidden">
+              <div class="sistemaProvision whiteBg option">Cuentas por pagar</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaProvision whiteBg option">Cuentas por cobrar</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaProvision whiteBg option">Gesti&oacute;n de letras</div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            </div>
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="proToggle" src="./Images/maso.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="proToggle" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection pushedSection" id="logToggle">
+            <button id="logButton">
+              <div class="sectionDetails">
+                <h3 class="middLetter">Sistema log&iacute;stico</h3>
+                <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+              </div>
+              <figure class="dropDownContainer">
+                <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+              </figure>
+            </button>
+            <!-- FIX THIS -->
+            <div id="logDisplay" class="logDisplay hidden">
+              <div class="sistemaLogistico whiteBg option">Requerimiento</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaLogistico whiteBg option">Cuadro comparativo</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaLogistico whiteBg option">Log&iacute;stica</div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaLogistico whiteBg option">Importaciones</div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/manan.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            </div>
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="logToggle" src="./Images/maso.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="logToggle" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection pushedSection" id="conToggle">
+            <button id="conButton">
+              <div class="sectionDetails">
+                <h3 class="middLetter">Sistema contable</h3>
+                <p class="smallLetter">Hacemos esto y lo hacemos bien</p>
+              </div>
+              <figure class="dropDownContainer">
+                <img class="dropDown" src="./Images/dropDown.png" alt="Menu desplegable">
+              </figure>
+            </button>
+            <div id="conDisplay" class="conDisplay hidden">
+              <div class="sistemaContable whiteBg option">Contabilidad</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="sistemaContable whiteBg option">Estado financiero</div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+              <div class="littleIcon whiteBg"><img src="./Images/todoBeun.png" alt="" class="planIcon"></div>
+            </div>
+            <!-- I dont know what is this -->
+            <!-- <div id="variableDisplay" class="variableDisplay hidden">
           </div> -->
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection check">
-          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
-        </div>
-        <div class="chartSection"></div>
-        <div class="chartButton">
-          <button class="wrande colorBlue butDown" id="empButton">
-            <a class="linkFormat" href="#header">Cotizar</a>
-          </button>
-        </div>
-        <div class="chartButton">
-          <button class="wrande colorBlue butDown" id="mypButton">
-            <a class="linkFormat" href="#header">Cotizar</a>
-          </button>
-        </div>
-        <div class="chartButton">
-          <button class="wrande colorBlue butDown" id="pymButton">
-            <a class="linkFormat" href="#header">Cotizar</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="benefits" id="benefits">
-    <div class="benefitsTitle functionDescription">
-      <h2>Nuestros Beneficios</h2>
-      <p>Estos son alg&uacute;nos de los benef&iacute;cios con los que contar&aacute;s al formar parte de
-        nosotros</p>
-    </div>
-    <div class="benefitsContainer">
-      <div class="benefitItem">
-        <img src="./Images/reporte.png" alt="Imagen de reportes">
-        <div class="benefitsDetails">
-          <h4>Generar reportes</h4>
-          <p>Ayuda a gestionar y formalizar tus actividades</p>
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection check">
+            <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
+          </div>
+          <div class="chartSection"></div>
+          <div class="chartButton">
+            <button class="wrande colorBlue butDown" id="empButton">
+              <a class="linkFormat" href="#header">Cotizar</a>
+            </button>
+          </div>
+          <div class="chartButton">
+            <button class="wrande colorBlue butDown" id="mypButton">
+              <a class="linkFormat" href="#header">Cotizar</a>
+            </button>
+          </div>
+          <div class="chartButton">
+            <button class="wrande colorBlue butDown" id="pymButton">
+              <a class="linkFormat" href="#header">Cotizar</a>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="benefitItem">
-        <img src="./Images/multifuncionalidad.png" alt="Imagen de multifuncionalidad">
-        <div class="benefitsDetails">
-          <h4>Multifuncional</h4>
-          <p>Software preparado para todo tipo de tareas</p>
+    </section>
+    <section class="benefits" id="benefits">
+      <div class="benefitsTitle functionDescription">
+        <h2>Nuestros Beneficios</h2>
+        <p>Estos son alg&uacute;nos de los benef&iacute;cios con los que contar&aacute;s al formar parte de
+          nosotros</p>
+      </div>
+      <div class="benefitsContainer">
+        <div class="benefitItem">
+          <img src="./Images/reporte.png" alt="Imagen de reportes">
+          <div class="benefitsDetails">
+            <h4>Generar reportes</h4>
+            <p>Ayuda a gestionar y formalizar tus actividades</p>
+          </div>
+        </div>
+        <div class="benefitItem">
+          <img src="./Images/multifuncionalidad.png" alt="Imagen de multifuncionalidad">
+          <div class="benefitsDetails">
+            <h4>Multifuncional</h4>
+            <p>Software preparado para todo tipo de tareas</p>
+          </div>
+        </div>
+        <div class="benefitItem">
+          <img src="./Images/especializacion.png" alt="Imagen de especializacion">
+          <div class="benefitsDetails">
+            <h4>Especializaci&oacute;n</h4>
+            <p>Nuestro software se acopla a cualquier tipo de empresa</p>
+          </div>
+        </div>
+        <div class="benefitItem">
+          <img src="./Images/servicioTecnico.png" alt="Imagen de servicio t&eacute;cnico">
+          <div class="benefitsDetails">
+            <h4>Servicio t&eacute;cnico</h4>
+            <p>Atenci&oacute;n personalizada inmediata 24/7</p>
+          </div>
         </div>
       </div>
-      <div class="benefitItem">
-        <img src="./Images/especializacion.png" alt="Imagen de especializacion">
-        <div class="benefitsDetails">
-          <h4>Especializaci&oacute;n</h4>
-          <p>Nuestro software se acopla a cualquier tipo de empresa</p>
-        </div>
-      </div>
-      <div class="benefitItem">
-        <img src="./Images/servicioTecnico.png" alt="Imagen de servicio t&eacute;cnico">
-        <div class="benefitsDetails">
-          <h4>Servicio t&eacute;cnico</h4>
-          <p>Atenci&oacute;n personalizada inmediata 24/7</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- <section class="users">
+    </section>
+    <!-- <section class="users">
     <h2>Utilizado por</h2>
     <div class="brand">
       <div class="logoUsuario"><a href=""><img src="" alt=""></a></div>
@@ -479,27 +479,28 @@
       <div class="logoUsuario"><a href=""><img src="" alt=""></a></div>
     </div>
   </section> -->
-  <footer id="footer">
-    <div class="copyright">
-      <h4>© 2019 ERP Systems & Consulting. Todos los derechos reservados.</h4>
-    </div>
-    <div class="links">
-      <ul>
-        <li>
-          <a href="">Contacto</a>
-        </li>
-        <li>
-          <a href="">T&eacute;rminos de uso</a>
-        </li>
-        <li>
-          <a href="">Pol&iacute;tica de privacidad</a>
-        </li>
-        <li>
-          <a href="http://erp-solutionsperu.com">erp-system.com</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <footer id="footer">
+      <div class="copyright">
+        <h4>© 2019 ERP Systems & Consulting. Todos los derechos reservados.</h4>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+          <li>
+            <a href="">T&eacute;rminos de uso</a>
+          </li>
+          <li>
+            <a href="">Pol&iacute;tica de privacidad</a>
+          </li>
+          <li>
+            <a href="http://erp-solutionsperu.com">erp-system.com</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
   <script src="./Js/index.js"></script>
   <script src="./Js/writing.js"></script>
   <script>
