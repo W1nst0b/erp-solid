@@ -434,7 +434,9 @@
     </div>
   </section>
   <section class="benefits" id="benefits">
-    <h2>Nuestros Beneficios</h2>
+    <div class="benefitsTitle">
+      <h2>Nuestros Beneficios</h2>
+    </div>
     <div class="benefitsContainer">
       <div class="benefitItem">
         <img src="./Images/reporte.png" alt="Imagen de reportes">
@@ -500,7 +502,7 @@
   <script src="./Js/writing.js"></script>
   <script>
     const nav = document.querySelector('#function');
-    const topnav = nav.offsetTop - 50;
+    const topnav = nav.offsetTop - 100;
     console.log(topnav);
     function fixNav() {
       if (window.scrollY >= topnav) {
