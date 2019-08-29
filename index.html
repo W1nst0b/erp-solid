@@ -103,9 +103,9 @@
           <img class="imgInventario" src="./Images/inventario.png" alt="Imagen inventario">
         </figure>
         <p>Mejore la gesti&oacute;n de sus productos y establezca un control para su inventario</p>
-        <button class="size colorWhite">
-          <a class="linkFormat" href="">Saber m&aacute;s</a>
-        </button>
+        <!-- <button class="size colorBlack">
+          <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
+        </button> -->
       </div>
       <!-- <div class="functionItem">
         <h4>Log&iacute;stica</h4>
@@ -123,9 +123,9 @@
           <img class="imgFactura" src="./Images/facturacion.png" alt="Imagen facturaci&oacute;n">
         </figure>
         <p>Emita facturas electr&oacute;nicas que cumplan los par&aacute;metros establecidos por sunat</p>
-        <button class="size colorWhite">
-          <a class="linkFormat" href="">Saber m&aacute;s</a>
-        </button>
+        <!-- <button class="size colorBlack">
+          <a class="linkFormat" href="#plans">Saber m&aacute;s</a>
+        </button> -->
       </div>
       <!-- <div class="functionItem">
         <h4>Cuadro comparativo</h4>
@@ -143,9 +143,9 @@
           <img class="imgLibro" src="./Images/pngLibros.png" alt="Imagen de libros">
         </figure>
         <p>Realice un an&aacute;lisis profundo de sus compras y ventas</p>
-        <button class="size colorWhite">
-          <a class="linkFormat" href="">Saber m&aacute;s</a>
-        </button>
+        <!-- <button class="size colorBlack">
+          <a class="linkFormat" href="#conToggle">Saber m&aacute;s</a>
+        </button> -->
       </div>
       <div class="functionItem">
         <h4>Contabilidad</h4>
@@ -153,9 +153,9 @@
           <img class="imgConta" src="./Images/contabilidad.png" alt="Imagen contabilidad">
         </figure>
         <p>Realice operacions complejas de contabilidad sin necesidad de conocimientos profundos</p>
-        <button class="size colorWhite">
-          <a class="linkFormat" href="">Saber m&aacute;s</a>
-        </button>
+        <!-- <button class="size colorBlack">
+          <a class="linkFormat" href="#conToggle">Saber m&aacute;s</a>
+        </button> -->
       </div>
     </div>
   </section>
@@ -416,17 +416,17 @@
         </div>
         <div class="chartSection"></div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="empButton">
+          <button class="wrande colorBlue butDown" id="empButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="mypButton">
+          <button class="wrande colorBlue butDown" id="mypButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="pymButton">
+          <button class="wrande colorBlue butDown" id="pymButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
@@ -451,14 +451,14 @@
         <img src="./Images/multifuncionalidad.png" alt="Imagen de multifuncionalidad">
         <div class="benefitsDetails">
           <h4>Multifuncional</h4>
-          <p>Software acoplable a todo tipo de empresas</p>
+          <p>Software preparado para todo tipo de tareas</p>
         </div>
       </div>
       <div class="benefitItem">
         <img src="./Images/especializacion.png" alt="Imagen de especializacion">
         <div class="benefitsDetails">
           <h4>Especializaci&oacute;n</h4>
-          <p>Nuestro software se acopla a cualquier tipo de giro</p>
+          <p>Nuestro software se acopla a cualquier tipo de empresa</p>
         </div>
       </div>
       <div class="benefitItem">
@@ -606,15 +606,16 @@
     var conButton = document.getElementById("conButton");
     conButton.addEventListener("click", () => {
       var conDisplay = document.getElementById("conDisplay");
-      var cotButton = document.querySelectorAll("#cotButton");
+      var empButton = document.querySelectorAll(".butDown");
       if (conDisplay.style.display === "grid") {
         conDisplay.style.display = "none";
-        for (let i = 0; i < cotButton.length; i++) {
-          cotButton[i].style.marginTop = 0;
+        for (let i = 0; i < empButton.length; i++) {
+          console.log(empButton)
+          empButton[i].style.marginTop = 0;
         }
       } else {
-        for (let i = 0; i < cotButton.length; i++) {
-          cotButton[i].style.marginTop = "100px";
+        for (let i = 0; i < empButton.length; i++) {
+          empButton[i].style.marginTop = "100px";
         }
         conDisplay.style.display = "grid"
       }
