@@ -74,9 +74,9 @@
             <input type="number" placeholder="N&uacute;mero telef&oacute;nico" name="numero" id="">
             <input type="number" placeholder="Ruc" name="ruc" id="">
             <select name="plan" id="plan">
-              <option value="Plan emprendedor">Plan emprendedor</option>
-              <option value="Plan mype">Plan mype</option>
-              <option value="Plan pyme">Plan pyme</option>
+              <option value="emprendedor">Plan emprendedor</option>
+              <option value="mype">Plan mype</option>
+              <option value="pyme">Plan pyme</option>
             </select>
           </div>
           <div class="checkbox">
@@ -106,7 +106,7 @@
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
       </div>
-      <div class="functionItem">
+      <!-- <div class="functionItem">
         <h4>Log&iacute;stica</h4>
         <figure class="itemImageContainer">
           <img class="imgLogistica" src="./Images/logistica.png" alt="Imagen log&iacute;stica">
@@ -115,9 +115,9 @@
         <button class="size colorWhite">
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
-      </div>
+      </div> -->
       <div class="functionItem">
-        <h4>Facturaci&oacute;n electr&oacute;nica</h4>
+        <h4>Facturaci&oacute;n<br>electr&oacute;nica</h4>
         <figure class="itemImageContainer">
           <img class="imgFactura" src="./Images/facturacion.png" alt="Imagen facturaci&oacute;n">
         </figure>
@@ -126,7 +126,7 @@
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
       </div>
-      <div class="functionItem">
+      <!-- <div class="functionItem">
         <h4>Cuadro comparativo</h4>
         <figure class="itemImageContainer">
           <img class="imgCuadro" src="./Images/cuadroComparativo.png" alt="Imagen cuadro comparativo">
@@ -135,9 +135,9 @@
         <button class="size colorWhite">
           <a class="linkFormat" href="">Saber m&aacute;s</a>
         </button>
-      </div>
+      </div> -->
       <div class="functionItem">
-        <h4>Libro de compras y ventas</h4>
+        <h4>Libro de<br>compras y ventas</h4>
         <figure class="itemImageContainer">
           <img class="imgLibro" src="./Images/pngLibros.png" alt="Imagen de libros">
         </figure>
@@ -405,27 +405,27 @@
           </div> -->
         </div>
         <div class="chartSection check">
-          <img class="planIcon" id="conToggle" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
         <div class="chartSection check">
-          <img class="planIcon" id="conToggle" src="./Images/maso.png" alt="Icono">
+          <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
         <div class="chartSection check">
           <img class="planIcon" id="conToggle" src="./Images/todoBeun.png" alt="Icono">
         </div>
         <div class="chartSection"></div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="cotButton">
+          <button class="wrande colorBlue" id="empButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="cotButton">
+          <button class="wrande colorBlue" id="mypButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
         <div class="chartButton">
-          <button class="wrande colorBlue" id="cotButton">
+          <button class="wrande colorBlue" id="pymButton">
             <a class="linkFormat" href="#header">Cotizar</a>
           </button>
         </div>
@@ -613,6 +613,19 @@
         }
         conDisplay.style.display = "grid"
       }
+    })
+    const empButton = document.getElementById("empButton");
+    const mypButton = document.getElementById("mypButton");
+    const pymButton = document.getElementById("pymButton");
+    const select = document.getElementById("plan");
+    empButton.addEventListener("click", () => {
+      select.value = 'emprendedor'
+    })
+    mypButton.addEventListener("click", () => {
+      select.value = 'mype'
+    })
+    pymButton.addEventListener("click", () => {
+      select.value = 'pyme'
     })
   </script>
 </body>
