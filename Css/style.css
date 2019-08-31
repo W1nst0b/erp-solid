@@ -41,11 +41,16 @@ html {
 }
 
 .navContainer {
+  background-color: var(--color-white);
+  position: fixed;
   display: flex;
+  width: 100%;
   height: 12vh;
   padding: 0 60px;
   justify-content: space-around;
   align-items: center;
+  z-index: 30;
+  transition: all 120ms ease-in-out;
 }
 
 .fixed-nav .navContainerFake {
@@ -189,10 +194,11 @@ html {
 /* ----------HERO START------------- */
 
 .hero {
+  padding-top: 12vh;
   display: flex;
   justify-content: center;
   min-height: 590px;
-  height: 80vh;
+  height: 95vh;
 }
 
 .heroCover {

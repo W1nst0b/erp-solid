@@ -504,14 +504,18 @@
   <script src="./Js/index.js"></script>
   <script src="./Js/writing.js"></script>
   <script>
-    const nav = document.querySelector('#function');
-    const topnav = nav.offsetTop - 100;
-    console.log(topnav);
+    const hero = document.getElementById('hero');
+    const navBar = document.getElementById('navContainer');
+    const bottomNav = hero.offsetTop;
+    console.log(bottomNav);
     function fixNav() {
-      if (window.scrollY >= topnav) {
-        document.body.classList.add('fixed-nav');
+      if (window.scrollY >= (bottomNav + 50)) {
+        navBar.style.height = "5vh";
+        console.log(bottomNav);
+        // document.body.classList.add('fixed-nav');
       } else {
-        document.body.classList.remove('fixed-nav');
+        navBar.style.height = ""
+        // document.body.classList.remove('fixed-nav');
       }
     }
     window.addEventListener('scroll', fixNav)
