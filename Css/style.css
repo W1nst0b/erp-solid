@@ -58,6 +58,12 @@ html {
   transition: all 120ms ease-in-out;
 }
 
+.logo {
+  transition: none;
+  border: 10px solir red;
+  height: 95%;
+}
+
 .fixed-nav .navContainerFake {
   top: 0;
   display: flex;
@@ -1115,9 +1121,24 @@ button {
 }
 
 .whiteBg {
-  background-color: #f0f0f0
+  background-color: #dddddd
 }
 
 .on:hover {
   cursor: pointer;
+}
+
+.logoImageContainer {
+  /* padding: 6px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.logoImage {
+  height: 100%;
+  /* border: 100px solid red; */
+  /* height: 50%; */
 }
