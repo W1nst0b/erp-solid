@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="Css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>ERP Systems & Consulting</title>
 </head>
 
@@ -27,7 +28,7 @@
           <button class="contact size colorBlack">
             <a class="linkFormat" href="">Contacto</a>
           </button>
-          <button class="extern-link size colorWhite">
+          <button class="extern-link size colorWhite" id="removeButton">
             <a class="linkFormat" href="http://erp-solutionsperu.com">erp-system.com</a>
           </button>
         </div>
@@ -45,6 +46,21 @@
         </div>
       </nav>
     </header>
+    <section class="upModal" id="upModal">
+      <div class="box">
+        <figure>
+          <img src="./Images/dropDown.png" alt="">
+        </figure>
+      </div>
+    </section>
+    <!-- <div class="social" id="social">
+      <div class="socialContainer">
+        <figure class="socialImageContainer"><img src="" alt="" class="socialImage"></figure>
+        <figure class="socialImageContainer"><img src="" alt="" class="socialImage"></figure>
+        <figure class="socialImageContainer"><img src="" alt="" class="socialImage"></figure>
+        <figure class="socialImageContainer"><img src="" alt="" class="socialImage"></figure>
+      </div>
+    </div> -->
     <section class="hero" id="hero">
       <div class="heroCover">
         <figure class="heroImageContainer">
@@ -505,20 +521,38 @@
   <script src="./Js/writing.js"></script>
   <script>
     const hero = document.getElementById('hero');
+    var removeButton = document.querySelector('.buttons');
     const navBar = document.getElementById('navContainer');
     const bottomNav = hero.offsetTop;
     console.log(bottomNav);
     function fixNav() {
-      if (window.scrollY >= (bottomNav + 50)) {
+      if (window.scrollY >= (bottomNav + 100)) {
         navBar.style.height = "5vh";
-        console.log(bottomNav);
+        removeButton.style.display = "none";
         // document.body.classList.add('fixed-nav');
       } else {
+        removeButton.style.display = "";
         navBar.style.height = ""
         // document.body.classList.remove('fixed-nav');
       }
     }
+    const upModal = document.getElementById('upModal');
+    const func = document.getElementById('function');
+    var funcion = func.offsetTop;
+    function showGoUpButton() {
+      if (window.scrollY >= funcion) {
+        console.log(0)
+        upModal.style.visibility = "visible";
+        upModal.style.opacity = 1;
+        upModal.style.position = "fixed";
+      } else {
+        upModal.style.visibility = "hidden";
+        upModal.style.opacity = 0;
+        upModal.style.position = "none";
+      }
+    }
     window.addEventListener('scroll', fixNav)
+    window.addEventListener('scroll', showGoUpButton)
 
     // --------------------------------------------
     // var pushedSection = document.getElementsByClassName("pushedSection");
@@ -547,13 +581,11 @@
       var venDisplay = document.getElementById("venDisplay");
       var finToggle = document.querySelectorAll("#finToggle");
       if (venDisplay.style.display === "grid") {
-        console.log("Hola")
         for (let i = 0; i < finToggle.length; i++) {
           finToggle[i].style.marginTop = 0;
         }
         venDisplay.style.display = "none";
       } else {
-        console.log("Adios")
         for (let i = 0; i < finToggle.length; i++) {
           finToggle[i].style.marginTop = "156px";
         }

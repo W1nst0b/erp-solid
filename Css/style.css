@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 * {
   outline: none;
   margin: 0;
@@ -28,6 +27,12 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 /* ----------HEADER START------------- */
@@ -123,7 +128,8 @@ html {
   display: flex;
   justify-content: space-between;
   /* border: 1px solid red; */
-  width: 285px;
+  width: auto;
+  transition: all 50ms ease-in-out;
 }
 
 .buttons a {
@@ -167,6 +173,7 @@ html {
 }
 
 .buttons .extern-link {
+  margin-left: 10px;
   background-color: var(--color-white);
   border: 2px solid var(--color-black);
 }
@@ -190,6 +197,52 @@ html {
 }
 
 /* ----------HEADER END------------- */
+
+/* ----------MODAL START------------ */
+
+.upModal {
+  /* display: fixed; */
+  position: fixed;
+  transition: all 150ms ease;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  /* background-color: white; */
+}
+
+.box figure:hover {
+  /* background-color: green; */
+  box-shadow: 0px 0px 2px #12130f;
+}
+
+.box {
+  position: absolute;
+  /* border: 1px solid red; */
+  padding: 20px;
+  z-index: 60;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+}
+
+.box figure {
+  transition: all 300ms ease;
+  cursor: pointer;
+  box-shadow: 0px -7px 10px #12130f;
+  transform: rotate(180deg);
+  transition: all 30px ease;
+  background-color: #242e33a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+}
+
+/* -----------MODAL END------------- */
 
 /* ----------HERO START------------- */
 
