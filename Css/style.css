@@ -1131,14 +1131,23 @@ button {
 .logoImageContainer {
   /* padding: 6px 0; */
   display: flex;
+
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
   height: 100%;
+  font-size: 3rem;
 }
 
-.logoImage {
-  height: 100%;
-  /* border: 100px solid red; */
+.logoImageContainer span {
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+#logoImage {
+  margin-right: 15px;
+  height: 90%;
+  /* border: 1px solid red; */
   /* height: 50%; */
 }

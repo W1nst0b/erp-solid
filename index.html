@@ -17,7 +17,8 @@
       <nav class="navContainer" id="navContainer">
         <div class="logo">
           <figure class="logoImageContainer">
-            <img src="./Images/Union 1.png" alt="Logo ERP Systems & Consulting" id="logoImage">
+            <img src="./Images/faviconColor.png" alt="Logo ERP Systems & Consulting" id="logoImage">
+            <span>E.R.P. Systems & Consulting</span>
           </figure>
         </div>
         <div class="menuContainer">
@@ -554,12 +555,13 @@
       if (window.scrollY >= (bottomNav + 100)) {
         navBar.style.height = "5vh";
         removeButton.style.display = "none";
-        image.src = "./Images/logo.png"
+        image.style.height = "80%";
         // document.body.classList.add('fixed-nav');
       } else {
         removeButton.style.display = "";
         navBar.style.height = ""
-        image.src = "./Images/Union 1.png"
+        image.style.height = "";
+        // image.src = "./Images/logoColor.png"
         // document.body.classList.remove('fixed-nav');
       }
     }
