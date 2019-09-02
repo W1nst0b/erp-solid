@@ -198,7 +198,7 @@ html {
 
 /* ----------HEADER END------------- */
 
-/* ----------MODAL START------------ */
+/* ------SCROLL-TO-TOP START-------- */
 
 .upModal {
   /* background-color: #242e33a6; */
@@ -252,7 +252,7 @@ html {
   z-index: 20;
 }
 
-/* -----------MODAL END------------- */
+/* -------SCROLL-TO-TOP END--------- */
 
 /* ----------HERO START------------- */
 
@@ -1082,4 +1082,8 @@ button {
 
 .whiteBg {
   background-color: #f0f0f0
+}
+
+.on:hover {
+  cursor: pointer;
 }
